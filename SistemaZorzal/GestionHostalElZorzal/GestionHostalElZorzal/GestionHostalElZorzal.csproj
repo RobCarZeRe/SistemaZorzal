@@ -85,6 +85,12 @@
     <Compile Include="Presentacion\FrmAddProveedor.Designer.cs">
       <DependentUpon>FrmAddProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\FrmBoleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FrmBoleta.Designer.cs">
+      <DependentUpon>FrmBoleta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\FrmClientes.cs">
       <SubType>Form</SubType>
     </Compile>

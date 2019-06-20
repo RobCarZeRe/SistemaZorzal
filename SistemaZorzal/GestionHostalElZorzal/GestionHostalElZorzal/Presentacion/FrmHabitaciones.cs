@@ -101,13 +101,14 @@ namespace GestionHostalElZorzal.Presentacion
                 {
                     button1.BackColor = Color.Red;
                     //button1.BackgroundImage = "C:/Users/Usuario/Desktop/puerta.jpg";
-                    button1.BackgroundImage = Image.FromFile(@"C:/Users/Usuario/Desktop/puerta.jpg");
+                    //button1.BackgroundImage = Image.FromFile(@"C:/Users/Usuario/Desktop/puerta.jpg");
+                    button1.BackgroundImage = Image.FromFile(@"C:/Users/DEPIS01/Desktop/puerta.jpg");
 
-
+                    
                 }
                 else
                 {
-                    button1.BackgroundImage = Image.FromFile(@"C:/Users/Usuario/Desktop/puertab.jpg");
+                    button1.BackgroundImage = Image.FromFile(@"C:/Users/DEPIS01/Desktop/puertab.jpg");
                 }
                 
                 this.Controls.Add(button1);

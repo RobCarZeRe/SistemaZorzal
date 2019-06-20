@@ -96,5 +96,30 @@ namespace GestionHostalElZorzal.Negocio
             }
             return rpta;
         }
+
+        public DataTable BuscaNroRegistro()
+        {
+            DataTable dtCliente = new DataTable("Cliente");
+            SqlConnection sqlCon = new SqlConnection();
+            string rpta = "";
+            try
+            {
+                ClsConexion objcon = new ClsConexion();
+                objcon.conectar();
+                sqlCon.ConnectionString = ClsConexion.ConBDcadena;
+                SqlCommand sqlCmd = new SqlCommand();
+                sqlCmd.Connection = sqlCon;//La conexion que va a usar el comando
+                sqlCmd.CommandText = "USP_S_BuscarNumeroRegistroHab";//El comando a ejecutar
+                sqlCmd.CommandType = CommandType.StoredProcedure;//Decirle al comando que va a ejecutar una sentencia SQL
+
+                SqlDataAdapter sqlDat = new SqlDataAdapter(sqlCmd);
+                sqlDat.Fill(dtCliente);//Llenamos el DataTable
+            }
+            catch (Exception ex)
+            {
+                dtCliente = null;
+            }
+            return dtCliente;
+        }
     }
 }

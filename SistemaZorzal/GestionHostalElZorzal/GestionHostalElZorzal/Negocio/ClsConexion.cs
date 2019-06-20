@@ -9,7 +9,7 @@ namespace GestionHostalElZorzal.Negocio
 {
     class ClsConexion
     {
-        public string Servidor = @"DESKTOP-G2QLUNH";//nombre del servidor base de datos
+        public string Servidor = @"DEPIS23";//nombre del servidor base de datos
         public string BaseDatos = "DbelZorzal";
         public string usuario = "";
         public string clave = "";

@@ -19,8 +19,8 @@ namespace GestionHostalElZorzal
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FrmRegistroHabCliente());
             //Application.Run(new FrmHabitaciones());
-            //Application.Run(new FrmLogin());
-            Application.Run(new FrmVentaProducto());
+            Application.Run(new FrmLogin());
+            //Application.Run(new FrmVentaProducto());
 
         }
     }

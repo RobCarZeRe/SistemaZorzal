@@ -87,5 +87,10 @@ namespace GestionHostalElZorzal.Presentacion
             frm.Show();
            
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

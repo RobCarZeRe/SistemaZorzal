@@ -22,6 +22,7 @@ namespace GestionHostalElZorzal.Presentacion
             cargardatos();
             timer1.Enabled = true;
             calcularfecha();
+            cargarnroregistro();
         }
         public static string dniemp;
         public static string nombre;
@@ -64,9 +65,26 @@ namespace GestionHostalElZorzal.Presentacion
         }
         private void FrmRegistroHabCliente_Load(object sender, EventArgs e)
         {
-           
+            GpbContenedor.Enabled = false;
 
         }
+
+        public void cargarnroregistro()
+        {
+            // ClsEVentaProd objEvp = new ClsEVentaProd();
+            ClsNRegHabCli objNvp = new ClsNRegHabCli();
+
+            DataTable dt = new DataTable();
+            dt = objNvp.BuscaNroRegistro();
+            if (dt.Rows.Count > 0)
+            {
+                DataRow Fila = dt.Rows[0];
+                TxtRegistro.Text = Fila["NumeroRegistro"].ToString();
+            }
+
+        }
+
+
 
         private void CmbHabitacion_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -167,29 +185,7 @@ namespace GestionHostalElZorzal.Presentacion
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            ClsERegHabCli objE = new ClsERegHabCli();
-            ClsNRegHabCli objN = new ClsNRegHabCli();
-            objE.NomEncargado = TxtNombreEnc.Text;
-            objE.DniCli = TxtDniCli.Text;
-            objE.NomCli = TxtNombre.Text;
-            objE.NroHab = nrohab;
-            if(ChckBoxporhora.Checked == true)
-            {
-                objE.Costo = TxtCosto2.Text;
-                objE.TiempoAlq = TxtHoras.Text + " horas";
-            }
-            else
-            {
-                objE.Costo = CostoT.Text;
-                objE.TiempoAlq = TxtDias.Text + " dias";
-
-            }
             
-            objE.FechayHora = TxtFecha.Text + " " + TxtHora.Text;
-                     
-            objN.MtdAgregarRegHabCli(objE);
-            MessageBox.Show("Datos Clientes Registrado Correctamente...");
-            cambiarestado();
         }
 
         public void cambiarestado()
@@ -224,6 +220,40 @@ namespace GestionHostalElZorzal.Presentacion
             {
              CostoT.Text = ((Convert.ToInt32(TxtCosto.Text) * Convert.ToInt32(TxtDias.Text)).ToString());
             }
+        }
+
+        private void BtnNuevo_Click(object sender, EventArgs e)
+        {
+            TxtRegistro.Text = (Convert.ToInt32(TxtRegistro.Text) + 1).ToString(); 
+            GpbContenedor.Enabled = true;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            ClsERegHabCli objE = new ClsERegHabCli();
+            ClsNRegHabCli objN = new ClsNRegHabCli();
+            objE.NomEncargado = TxtNombreEnc.Text;
+            objE.DniCli = TxtDniCli.Text;
+            objE.NomCli = TxtNombre.Text;
+            objE.NroHab = nrohab;
+            if (ChckBoxporhora.Checked == true)
+            {
+                objE.Costo = TxtCosto2.Text;
+                objE.TiempoAlq = TxtHoras.Text + " horas";
+            }
+            else
+            {
+                objE.Costo = CostoT.Text;
+                objE.TiempoAlq = TxtDias.Text + " dias";
+
+            }
+
+            objE.FechayHora = TxtFecha.Text + " " + TxtHora.Text;
+
+            objN.MtdAgregarRegHabCli(objE);
+            MessageBox.Show("Datos Clientes Registrado Correctamente...");
+            cambiarestado();
+            this.Close();
         }
     }
 }

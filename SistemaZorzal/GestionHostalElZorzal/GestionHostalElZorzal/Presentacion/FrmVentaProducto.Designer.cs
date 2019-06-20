@@ -48,6 +48,12 @@
             this.TxtDniCli = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.TxtImportePro = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.TxtCantCompraPro = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.TxtPrecioUnitPro = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.TxtCantidadPro = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -55,12 +61,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.TxtCodigoPro = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.TxtPrecioUnitPro = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.TxtCantCompraPro = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.TxtImportePro = new System.Windows.Forms.TextBox();
             this.DgvComprobante = new System.Windows.Forms.DataGridView();
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -285,6 +285,57 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Producto";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(470, 78);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(42, 13);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "Importe";
+            // 
+            // TxtImportePro
+            // 
+            this.TxtImportePro.Enabled = false;
+            this.TxtImportePro.Location = new System.Drawing.Point(534, 74);
+            this.TxtImportePro.Name = "TxtImportePro";
+            this.TxtImportePro.Size = new System.Drawing.Size(55, 20);
+            this.TxtImportePro.TabIndex = 18;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(203, 81);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(103, 13);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Cantidad de Compra";
+            // 
+            // TxtCantCompraPro
+            // 
+            this.TxtCantCompraPro.Location = new System.Drawing.Point(312, 78);
+            this.TxtCantCompraPro.Name = "TxtCantCompraPro";
+            this.TxtCantCompraPro.Size = new System.Drawing.Size(55, 20);
+            this.TxtCantCompraPro.TabIndex = 16;
+            this.TxtCantCompraPro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox5_KeyPress);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(436, 17);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(76, 13);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Precio Unitario";
+            // 
+            // TxtPrecioUnitPro
+            // 
+            this.TxtPrecioUnitPro.Enabled = false;
+            this.TxtPrecioUnitPro.Location = new System.Drawing.Point(433, 33);
+            this.TxtPrecioUnitPro.Name = "TxtPrecioUnitPro";
+            this.TxtPrecioUnitPro.Size = new System.Drawing.Size(79, 20);
+            this.TxtPrecioUnitPro.TabIndex = 14;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -344,57 +395,6 @@
             this.label6.Size = new System.Drawing.Size(40, 13);
             this.label6.TabIndex = 7;
             this.label6.Text = "Codigo";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(436, 17);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 13);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Precio Unitario";
-            // 
-            // TxtPrecioUnitPro
-            // 
-            this.TxtPrecioUnitPro.Enabled = false;
-            this.TxtPrecioUnitPro.Location = new System.Drawing.Point(433, 33);
-            this.TxtPrecioUnitPro.Name = "TxtPrecioUnitPro";
-            this.TxtPrecioUnitPro.Size = new System.Drawing.Size(79, 20);
-            this.TxtPrecioUnitPro.TabIndex = 14;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(203, 81);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(103, 13);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Cantidad de Compra";
-            // 
-            // TxtCantCompraPro
-            // 
-            this.TxtCantCompraPro.Location = new System.Drawing.Point(312, 78);
-            this.TxtCantCompraPro.Name = "TxtCantCompraPro";
-            this.TxtCantCompraPro.Size = new System.Drawing.Size(55, 20);
-            this.TxtCantCompraPro.TabIndex = 16;
-            this.TxtCantCompraPro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox5_KeyPress);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(470, 78);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 13);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "Importe";
-            // 
-            // TxtImportePro
-            // 
-            this.TxtImportePro.Enabled = false;
-            this.TxtImportePro.Location = new System.Drawing.Point(534, 74);
-            this.TxtImportePro.Name = "TxtImportePro";
-            this.TxtImportePro.Size = new System.Drawing.Size(55, 20);
-            this.TxtImportePro.TabIndex = 18;
             // 
             // DgvComprobante
             // 
