@@ -17,6 +17,18 @@ namespace GestionHostalElZorzal.Presentacion
             InitializeComponent();
             cargardatos();
         }
+        private void AbrirFormHija(object formhija)
+        {
+            if (this.panelContenedor.Controls.Count > 0)
+                this.panelContenedor.Controls.RemoveAt(0);
+            Form fh = formhija as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panelContenedor.Controls.Add(fh);
+            this.panelContenedor.Tag = fh;
+            fh.Show();
+
+        }
         public static string dniemp;
         public static string nombre;
         public static string cargo;
@@ -40,55 +52,93 @@ namespace GestionHostalElZorzal.Presentacion
 
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            FrmClientes frm = new FrmClientes();
+            AbrirFormHija(new FrmClientes());
+
+       
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FrmEmpleado());
+
+       
+        }
+
+       
+
+       
+
+       
+
+     
+        
+
+      
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            FrmLogin frm = new FrmLogin();
             frm.Show();
             this.Hide();
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+     
+
+        private void MenuVertical_Paint(object sender, PaintEventArgs e)
         {
-            FrmEmpleado frm = new FrmEmpleado();
-            frm.Show();
-            this.Hide();
+
         }
 
-        private void Button3_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            FrmProducto frm = new FrmProducto();
-            frm.Show();
-            this.Hide();
+            AbrirFormHija(new FrmProveedor());
+
+     
         }
 
-        private void Button4_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            FrmProveedor frm = new FrmProveedor();
-            frm.Show();
-            this.Hide();
+            AbrirFormHija(new FrmProducto());
+
+         
         }
 
-        private void Button5_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            FrmHabitaciones frm = new FrmHabitaciones();
-            frm.Show();
-            this.Hide();
+            AbrirFormHija(new FrmHabitaciones());
+
+        
         }
 
-        private void Button6_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
-            FrmRegistroHabCliente frm = new FrmRegistroHabCliente();
-            frm.Show();
+            AbrirFormHija(new FrmRegistroHabCliente());
+
+            
         }
 
-        private void Button7_Click(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e)
         {
-            FrmVentaProducto frm = new FrmVentaProducto();
-            frm.Show();
+            AbrirFormHija(new FrmVentaProducto());
+
+         
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FrmBoleta());
+
            
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
         {
 
         }

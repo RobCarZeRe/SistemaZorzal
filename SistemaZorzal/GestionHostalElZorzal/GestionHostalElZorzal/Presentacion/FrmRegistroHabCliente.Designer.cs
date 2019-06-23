@@ -111,7 +111,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Uighur", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(285, 3);
+            this.label17.Location = new System.Drawing.Point(358, 9);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(98, 38);
             this.label17.TabIndex = 63;
@@ -137,7 +137,7 @@
             // 
             this.groupBox5.Controls.Add(this.TxtRegistro);
             this.groupBox5.Controls.Add(this.label15);
-            this.groupBox5.Location = new System.Drawing.Point(18, 13);
+            this.groupBox5.Location = new System.Drawing.Point(89, 54);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(200, 41);
             this.groupBox5.TabIndex = 61;
@@ -147,7 +147,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Uighur", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(448, 26);
+            this.label16.Location = new System.Drawing.Point(552, 54);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(191, 38);
             this.label16.TabIndex = 62;
@@ -160,7 +160,7 @@
             this.GpbContenedor.Controls.Add(this.groupBox3);
             this.GpbContenedor.Controls.Add(this.groupBox2);
             this.GpbContenedor.Controls.Add(this.groupBox6);
-            this.GpbContenedor.Location = new System.Drawing.Point(3, 60);
+            this.GpbContenedor.Location = new System.Drawing.Point(82, 101);
             this.GpbContenedor.Name = "GpbContenedor";
             this.GpbContenedor.Size = new System.Drawing.Size(661, 329);
             this.GpbContenedor.TabIndex = 64;
@@ -508,7 +508,7 @@
             // 
             // BtnNuevo
             // 
-            this.BtnNuevo.Location = new System.Drawing.Point(224, 17);
+            this.BtnNuevo.Location = new System.Drawing.Point(295, 58);
             this.BtnNuevo.Name = "BtnNuevo";
             this.BtnNuevo.Size = new System.Drawing.Size(32, 41);
             this.BtnNuevo.TabIndex = 76;
@@ -520,13 +520,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(676, 392);
+            this.ClientSize = new System.Drawing.Size(860, 688);
             this.Controls.Add(this.BtnNuevo);
             this.Controls.Add(this.GpbContenedor);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.DgvHabitacion);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmRegistroHabCliente";
             this.Text = "FrmRegistroHabCliente";
             this.Load += new System.EventHandler(this.FrmRegistroHabCliente_Load);

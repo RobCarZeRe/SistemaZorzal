@@ -64,5 +64,15 @@ namespace GestionHostalElZorzal.Presentacion
             objEemp.empCodigo = TxtBuscar.Text;
             DgvEmpleado.DataSource = objNemp.MtdBuscarporCodigo(objEemp);
         }
+
+        private void TxtBuscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

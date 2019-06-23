@@ -165,6 +165,9 @@
     <EmbeddedResource Include="Presentacion\FrmAddProveedor.resx">
       <DependentUpon>FrmAddProveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FrmBoleta.resx">
+      <DependentUpon>FrmBoleta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\FrmClientes.resx">
       <DependentUpon>FrmClientes.cs</DependentUpon>
     </EmbeddedResource>

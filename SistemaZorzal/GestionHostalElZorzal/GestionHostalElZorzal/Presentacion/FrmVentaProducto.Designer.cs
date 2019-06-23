@@ -77,7 +77,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Uighur", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(249, 9);
+            this.label17.Location = new System.Drawing.Point(358, 9);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(206, 38);
             this.label17.TabIndex = 68;
@@ -87,7 +87,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Uighur", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(448, 32);
+            this.label16.Location = new System.Drawing.Point(554, 72);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(191, 38);
             this.label16.TabIndex = 67;
@@ -97,7 +97,7 @@
             // 
             this.groupBox5.Controls.Add(this.TxtRegistro);
             this.groupBox5.Controls.Add(this.label15);
-            this.groupBox5.Location = new System.Drawing.Point(18, 19);
+            this.groupBox5.Location = new System.Drawing.Point(124, 70);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(200, 41);
             this.groupBox5.TabIndex = 66;
@@ -125,7 +125,7 @@
             this.groupBox3.Controls.Add(this.TxtNombreEnc);
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Location = new System.Drawing.Point(18, 66);
+            this.groupBox3.Location = new System.Drawing.Point(124, 117);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(621, 44);
             this.groupBox3.TabIndex = 65;
@@ -178,7 +178,7 @@
             this.DgvHabitacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DgvHabitacion.EnableHeadersVisualStyles = false;
             this.DgvHabitacion.GridColor = System.Drawing.Color.DimGray;
-            this.DgvHabitacion.Location = new System.Drawing.Point(641, 15);
+            this.DgvHabitacion.Location = new System.Drawing.Point(727, 16);
             this.DgvHabitacion.Name = "DgvHabitacion";
             this.DgvHabitacion.ReadOnly = true;
             this.DgvHabitacion.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -195,7 +195,7 @@
             this.groupBox2.Controls.Add(this.BtnBuscar);
             this.groupBox2.Controls.Add(this.TxtDniCli);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 116);
+            this.groupBox2.Location = new System.Drawing.Point(118, 167);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(627, 74);
             this.groupBox2.TabIndex = 69;
@@ -278,7 +278,7 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.TxtCodigoPro);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Location = new System.Drawing.Point(12, 196);
+            this.groupBox1.Location = new System.Drawing.Point(118, 247);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(627, 114);
             this.groupBox1.TabIndex = 70;
@@ -401,7 +401,7 @@
             this.DgvComprobante.AllowUserToAddRows = false;
             this.DgvComprobante.AllowUserToDeleteRows = false;
             this.DgvComprobante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvComprobante.Location = new System.Drawing.Point(12, 317);
+            this.DgvComprobante.Location = new System.Drawing.Point(118, 368);
             this.DgvComprobante.Name = "DgvComprobante";
             this.DgvComprobante.ReadOnly = true;
             this.DgvComprobante.Size = new System.Drawing.Size(627, 150);
@@ -409,7 +409,7 @@
             // 
             // BtnGuardar
             // 
-            this.BtnGuardar.Location = new System.Drawing.Point(268, 489);
+            this.BtnGuardar.Location = new System.Drawing.Point(385, 531);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(75, 23);
             this.BtnGuardar.TabIndex = 72;
@@ -420,7 +420,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(472, 480);
+            this.label10.Location = new System.Drawing.Point(578, 538);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(67, 13);
             this.label10.TabIndex = 74;
@@ -429,7 +429,7 @@
             // TxtImporteFinal
             // 
             this.TxtImporteFinal.Enabled = false;
-            this.TxtImporteFinal.Location = new System.Drawing.Point(546, 473);
+            this.TxtImporteFinal.Location = new System.Drawing.Point(652, 531);
             this.TxtImporteFinal.Name = "TxtImporteFinal";
             this.TxtImporteFinal.Size = new System.Drawing.Size(55, 20);
             this.TxtImporteFinal.TabIndex = 73;
@@ -438,7 +438,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 525);
+            this.ClientSize = new System.Drawing.Size(860, 688);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.TxtImporteFinal);
             this.Controls.Add(this.BtnGuardar);
@@ -450,6 +450,7 @@
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.DgvHabitacion);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmVentaProducto";
             this.Text = "FrmVentaProducto";
             this.Load += new System.EventHandler(this.FrmVentaProducto_Load);

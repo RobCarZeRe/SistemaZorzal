@@ -21,7 +21,7 @@ namespace GestionHostalElZorzal.Presentacion
             ListarHabitaciones();
             cargarbotones();
         }
-        int coordenada1 = 200, coordenada2 =250, contador = 0;
+        int coordenada1 =200, coordenada2 =250, contador = 0;
         public static string datos;
         
         private void FrmHabitaciones_Load(object sender, EventArgs e)
@@ -102,13 +102,13 @@ namespace GestionHostalElZorzal.Presentacion
                     button1.BackColor = Color.Red;
                     //button1.BackgroundImage = "C:/Users/Usuario/Desktop/puerta.jpg";
                     //button1.BackgroundImage = Image.FromFile(@"C:/Users/Usuario/Desktop/puerta.jpg");
-                    button1.BackgroundImage = Image.FromFile(@"C:/Users/DEPIS01/Desktop/puerta.jpg");
+                    button1.BackgroundImage = Image.FromFile(@"C:/Users/Usuario/Desktop/puerta.jpg");
 
                     
                 }
                 else
                 {
-                    button1.BackgroundImage = Image.FromFile(@"C:/Users/DEPIS01/Desktop/puertab.jpg");
+                    button1.BackgroundImage = Image.FromFile(@"C:/Users/Usuario/Desktop/puertab.jpg");
                 }
                 
                 this.Controls.Add(button1);

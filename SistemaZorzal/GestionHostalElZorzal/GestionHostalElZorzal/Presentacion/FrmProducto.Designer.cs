@@ -36,12 +36,13 @@
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.TxtBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DgvProducto)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnListar
             // 
-            this.BtnListar.Location = new System.Drawing.Point(557, 450);
+            this.BtnListar.Location = new System.Drawing.Point(432, 490);
             this.BtnListar.Name = "BtnListar";
             this.BtnListar.Size = new System.Drawing.Size(75, 23);
             this.BtnListar.TabIndex = 69;
@@ -51,7 +52,7 @@
             // 
             // BtnEliminar
             // 
-            this.BtnEliminar.Location = new System.Drawing.Point(429, 450);
+            this.BtnEliminar.Location = new System.Drawing.Point(295, 490);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(75, 23);
             this.BtnEliminar.TabIndex = 68;
@@ -61,7 +62,7 @@
             // 
             // BtnModificar
             // 
-            this.BtnModificar.Location = new System.Drawing.Point(325, 450);
+            this.BtnModificar.Location = new System.Drawing.Point(173, 490);
             this.BtnModificar.Name = "BtnModificar";
             this.BtnModificar.Size = new System.Drawing.Size(75, 23);
             this.BtnModificar.TabIndex = 67;
@@ -71,7 +72,7 @@
             // 
             // BtnNuevo
             // 
-            this.BtnNuevo.Location = new System.Drawing.Point(218, 450);
+            this.BtnNuevo.Location = new System.Drawing.Point(41, 490);
             this.BtnNuevo.Name = "BtnNuevo";
             this.BtnNuevo.Size = new System.Drawing.Size(75, 23);
             this.BtnNuevo.TabIndex = 66;
@@ -91,16 +92,16 @@
             this.DgvProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DgvProducto.EnableHeadersVisualStyles = false;
             this.DgvProducto.GridColor = System.Drawing.Color.DimGray;
-            this.DgvProducto.Location = new System.Drawing.Point(19, 69);
+            this.DgvProducto.Location = new System.Drawing.Point(13, 106);
             this.DgvProducto.Name = "DgvProducto";
             this.DgvProducto.ReadOnly = true;
             this.DgvProducto.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.DgvProducto.Size = new System.Drawing.Size(818, 358);
+            this.DgvProducto.Size = new System.Drawing.Size(835, 358);
             this.DgvProducto.TabIndex = 70;
             // 
             // BtnBuscar
             // 
-            this.BtnBuscar.Location = new System.Drawing.Point(672, 40);
+            this.BtnBuscar.Location = new System.Drawing.Point(615, 63);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(75, 23);
             this.BtnBuscar.TabIndex = 65;
@@ -110,7 +111,7 @@
             // 
             // TxtBuscar
             // 
-            this.TxtBuscar.Location = new System.Drawing.Point(120, 40);
+            this.TxtBuscar.Location = new System.Drawing.Point(56, 66);
             this.TxtBuscar.Name = "TxtBuscar";
             this.TxtBuscar.Size = new System.Drawing.Size(536, 20);
             this.TxtBuscar.TabIndex = 64;
@@ -118,17 +119,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(73, 48);
+            this.label1.Location = new System.Drawing.Point(10, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 63;
             this.label1.Text = "Buscar";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(358, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(131, 29);
+            this.label2.TabIndex = 71;
+            this.label2.Text = "Productos";
+            // 
             // FrmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(857, 512);
+            this.ClientSize = new System.Drawing.Size(860, 688);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnListar);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnModificar);
@@ -137,6 +149,7 @@
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.TxtBuscar);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmProducto";
             this.Text = "FrmProducto";
             this.Load += new System.EventHandler(this.FrmProducto_Load);
@@ -156,5 +169,6 @@
         private System.Windows.Forms.Button BtnBuscar;
         private System.Windows.Forms.TextBox TxtBuscar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

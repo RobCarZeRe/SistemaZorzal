@@ -20,28 +20,38 @@ namespace GestionHostalElZorzal.Presentacion
         }
         public static string cod, nom, car, ape;
 
-        private void FrmLogin_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
 
-        public static string c;
-        private void Button1_Click(object sender, EventArgs e)
+        private void TxtPassword_TextChanged(object sender, EventArgs e)
         {
-            //string usuario, contraseña;
-            //usuario = txtUsuario.Text;
-            //contraseña = txtContraseña.Text;
-            //if (usuario == "Administrador" && contraseña == "12345")
-            //{
-            //    FrmPrincipal frm = new FrmPrincipal();
-            //    frm.Show();
-            //    this.Hide();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Acceso denegado");
-            //}
 
+        }
+
+        private void TxtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
             ClsEEmpleado objEemp = new ClsEEmpleado();
             ClsNEmpleado objNemp = new ClsNEmpleado();
             objEemp.empCodigo = TxtUsuario.Text;
@@ -76,6 +86,57 @@ namespace GestionHostalElZorzal.Presentacion
                 frm.Show();
                 this.Hide();
             }
+
+        }
+        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        {
+            pictureBox1.Size = new Size(100, 92);
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Size = new Size(90, 85);
+        }
+
+        private void btnmin_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+
+        }
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Estas seguro que desea Salir", "◄ AVISO ►", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+            lblFecha.Text = DateTime.Now.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        public static string c;
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            //string usuario, contraseña;
+            //usuario = txtUsuario.Text;
+            //contraseña = txtContraseña.Text;
+            //if (usuario == "Administrador" && contraseña == "12345")
+            //{
+            //    FrmPrincipal frm = new FrmPrincipal();
+            //    frm.Show();
+            //    this.Hide();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Acceso denegado");
+            //}
+
+           
         }
     }
 }
