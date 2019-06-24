@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblHora = new System.Windows.Forms.Label();
             this.btncerrar = new System.Windows.Forms.Button();
@@ -48,7 +47,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImage = global::GestionHostalElZorzal.Properties.Resources.Login;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.lblHora);
             this.panel1.Controls.Add(this.btncerrar);
@@ -78,7 +77,7 @@
             // 
             // btncerrar
             // 
-            this.btncerrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncerrar.BackgroundImage")));
+            this.btncerrar.BackgroundImage = global::GestionHostalElZorzal.Properties.Resources.btn_cerrar;
             this.btncerrar.Location = new System.Drawing.Point(72, 226);
             this.btncerrar.Name = "btncerrar";
             this.btncerrar.Size = new System.Drawing.Size(35, 30);
@@ -102,7 +101,7 @@
             // 
             // btnmin
             // 
-            this.btnmin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnmin.BackgroundImage")));
+            this.btnmin.BackgroundImage = global::GestionHostalElZorzal.Properties.Resources.btn_min;
             this.btnmin.Location = new System.Drawing.Point(31, 226);
             this.btnmin.Name = "btnmin";
             this.btnmin.Size = new System.Drawing.Size(35, 30);
@@ -113,7 +112,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::GestionHostalElZorzal.Properties.Resources.btn_ingresar;
             this.pictureBox1.Location = new System.Drawing.Point(380, 102);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(90, 85);
@@ -172,7 +171,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::GestionHostalElZorzal.Properties.Resources.Fondo_Login2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);

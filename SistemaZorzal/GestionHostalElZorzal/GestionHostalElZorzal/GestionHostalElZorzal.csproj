@@ -222,6 +222,24 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\usuario.png" />
+    <None Include="Resources\puertab.jpg" />
+    <None Include="Resources\puerta1.jpg" />
+    <None Include="Resources\boleta.png" />
+    <None Include="Resources\btn_cerrar.png" />
+    <None Include="Resources\btn_ingresar.png" />
+    <None Include="Resources\btn_min.png" />
+    <None Include="Resources\carrito.png" />
+    <None Include="Resources\Fondo Login2.jpg" />
+    <None Include="Resources\habitacion-comoda.png" />
+    <None Include="Resources\habitacionventa.png" />
+    <None Include="Resources\Login.png" />
+    <None Include="Resources\Logo.png" />
+    <None Include="Resources\produc.png" />
+    <None Include="Resources\proveedor.png" />
+    <None Include="Resources\clientes.png" />
+    <None Include="Resources\empleados.png" />
+    <None Include="Resources\pagos.png" />
     <Content Include="Resources\puerta.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
