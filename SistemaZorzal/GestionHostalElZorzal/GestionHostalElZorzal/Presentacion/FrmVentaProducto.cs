@@ -17,7 +17,7 @@ namespace GestionHostalElZorzal.Presentacion
         public FrmVentaProducto()
         {
             InitializeComponent();
-            //cargardatos();
+            cargardatos();
             cargarnroregistro();
         }
         public static string dniemp;
@@ -32,6 +32,7 @@ namespace GestionHostalElZorzal.Presentacion
 
         private void FrmVentaProducto_Load(object sender, EventArgs e)
         {
+            gpbcontenedor.Enabled = false;
 
         }
         public void cargarnroregistro()
@@ -177,6 +178,12 @@ namespace GestionHostalElZorzal.Presentacion
         private void BtnNuevo_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            gpbcontenedor.Enabled = true;
+            TxtRegistro.Text = (Convert.ToInt32(TxtRegistro.Text) + 1).ToString();
         }
     }
 }
