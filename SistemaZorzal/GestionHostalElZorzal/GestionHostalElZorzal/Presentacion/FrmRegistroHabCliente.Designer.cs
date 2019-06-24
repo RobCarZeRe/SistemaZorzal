@@ -241,6 +241,7 @@
             this.TxtCargoEnc.Name = "TxtCargoEnc";
             this.TxtCargoEnc.Size = new System.Drawing.Size(128, 20);
             this.TxtCargoEnc.TabIndex = 15;
+            this.TxtCargoEnc.TextChanged += new System.EventHandler(this.TxtCargoEnc_TextChanged);
             // 
             // TxtNombreEnc
             // 
@@ -326,6 +327,7 @@
             this.BtnBuscar.TabIndex = 9;
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click_2);
             // 
             // TxtDniCli
             // 
@@ -399,6 +401,8 @@
             this.TxtDias.Name = "TxtDias";
             this.TxtDias.Size = new System.Drawing.Size(33, 20);
             this.TxtDias.TabIndex = 19;
+            this.TxtDias.TextChanged += new System.EventHandler(this.TxtDias_TextChanged_1);
+            this.TxtDias.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtDias_KeyPress_1);
             // 
             // label10
             // 
@@ -505,6 +509,7 @@
             this.CmbHabitacion.Name = "CmbHabitacion";
             this.CmbHabitacion.Size = new System.Drawing.Size(121, 21);
             this.CmbHabitacion.TabIndex = 0;
+            this.CmbHabitacion.SelectedIndexChanged += new System.EventHandler(this.CmbHabitacion_SelectedIndexChanged_1);
             // 
             // BtnNuevo
             // 

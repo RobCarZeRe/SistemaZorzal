@@ -70,7 +70,6 @@ C:\Users\Usuario\Documents\GitHub\SistemaZorzal\SistemaZorzal\GestionHostalElZor
 C:\Users\Usuario\Desktop\Gestion proyecto\ProyectoZorzal2.0\SistemaZorzal-master\SistemaZorzal\GestionHostalElZorzal\GestionHostalElZorzal\bin\Debug\GestionHostalElZorzal.exe.config
 C:\Users\Usuario\Desktop\Gestion proyecto\ProyectoZorzal2.0\SistemaZorzal-master\SistemaZorzal\GestionHostalElZorzal\GestionHostalElZorzal\bin\Debug\GestionHostalElZorzal.exe
 C:\Users\Usuario\Desktop\Gestion proyecto\ProyectoZorzal2.0\SistemaZorzal-master\SistemaZorzal\GestionHostalElZorzal\GestionHostalElZorzal\bin\Debug\GestionHostalElZorzal.pdb
-C:\Users\Usuario\Desktop\Gestion proyecto\ProyectoZorzal2.0\SistemaZorzal-master\SistemaZorzal\GestionHostalElZorzal\GestionHostalElZorzal\obj\Debug\GestionHostalElZorzal.csprojAssemblyReference.cache
 C:\Users\Usuario\Desktop\Gestion proyecto\ProyectoZorzal2.0\SistemaZorzal-master\SistemaZorzal\GestionHostalElZorzal\GestionHostalElZorzal\obj\Debug\GestionHostalElZorzal.Presentacion.FrmAddCliente.resources
 C:\Users\Usuario\Desktop\Gestion proyecto\ProyectoZorzal2.0\SistemaZorzal-master\SistemaZorzal\GestionHostalElZorzal\GestionHostalElZorzal\obj\Debug\GestionHostalElZorzal.Presentacion.FrmAddEmpleado.resources
 C:\Users\Usuario\Desktop\Gestion proyecto\ProyectoZorzal2.0\SistemaZorzal-master\SistemaZorzal\GestionHostalElZorzal\GestionHostalElZorzal\obj\Debug\GestionHostalElZorzal.Presentacion.FrmAddProducto.resources

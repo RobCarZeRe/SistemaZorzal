@@ -35,7 +35,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.DgvHabitacion = new System.Windows.Forms.DataGridView();
             this.gpbcontenedor = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.label10 = new System.Windows.Forms.Label();
             this.TxtImporteFinal = new System.Windows.Forms.TextBox();
             this.BtnGuardar = new System.Windows.Forms.Button();
@@ -67,6 +66,7 @@
             this.TxtNombreEnc = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvHabitacion)).BeginInit();
@@ -183,6 +183,7 @@
             this.BtnGuardar.TabIndex = 79;
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.UseVisualStyleBackColor = true;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click_1);
             // 
             // DgvComprobante
             // 
@@ -249,6 +250,7 @@
             this.TxtCantCompraPro.Name = "TxtCantCompraPro";
             this.TxtCantCompraPro.Size = new System.Drawing.Size(55, 20);
             this.TxtCantCompraPro.TabIndex = 16;
+            this.TxtCantCompraPro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCantCompraPro_KeyPress);
             // 
             // label7
             // 
@@ -309,6 +311,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // TxtCodigoPro
             // 
@@ -384,6 +387,7 @@
             this.BtnBuscar.TabIndex = 9;
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click_1);
             // 
             // TxtDniCli
             // 

@@ -121,5 +121,34 @@ namespace GestionHostalElZorzal.Negocio
             }
             return dtCliente;
         }
+
+        public DataTable MtdBuscarCostoHabitacion(ClsERegHabCli objECli)
+        {
+            DataTable dtCliente = new DataTable("Cliente");
+            SqlConnection sqlCon = new SqlConnection();
+            string rpta = "";
+            try
+            {
+                ClsConexion objcon = new ClsConexion();
+                objcon.conectar();
+                sqlCon.ConnectionString = ClsConexion.ConBDcadena;
+                SqlCommand sqlCmd = new SqlCommand();
+                sqlCmd.Connection = sqlCon;//La conexion que va a usar el comando
+                sqlCmd.CommandText = "USP_S_BuscarCostoHabitacion";//El comando a ejecutar
+                sqlCmd.CommandType = CommandType.StoredProcedure;//Decirle al comando que va a ejecutar una sentencia SQL
+                SqlParameter sqldnicliente = new SqlParameter();
+                sqldnicliente.ParameterName = "@Dni";
+                sqldnicliente.Value = objECli.DniCli;
+                sqlCmd.Parameters.Add(sqldnicliente);
+                SqlDataAdapter sqlDat = new SqlDataAdapter(sqlCmd);
+                sqlDat.Fill(dtCliente);//Llenamos el DataTable
+            }
+            catch (Exception ex)
+            {
+                dtCliente = null;
+            }
+            return dtCliente;
+        }
+
     }
 }

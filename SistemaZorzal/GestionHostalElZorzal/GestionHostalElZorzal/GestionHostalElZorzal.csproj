@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidad\ClsEBoleta.cs" />
     <Compile Include="Entidad\ClsECliente.cs" />
     <Compile Include="Entidad\ClsEEmpleado.cs" />
     <Compile Include="Entidad\ClsEProducto.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="Entidad\ClsERegHabCli.cs" />
     <Compile Include="Entidad\ClsEVentaProd.cs" />
     <Compile Include="Negocio\ClsConexion.cs" />
+    <Compile Include="Negocio\ClsNBoleta.cs" />
     <Compile Include="Negocio\ClsNCliente.cs" />
     <Compile Include="Negocio\ClsNEmpleado.cs" />
     <Compile Include="Negocio\ClsNHabitacion.cs" />

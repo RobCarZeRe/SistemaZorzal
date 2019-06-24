@@ -72,11 +72,16 @@ namespace GestionHostalElZorzal.Presentacion
                 FrmPrincipal.nombre = nom;
                 FrmRegistroHabCliente.nombre = nom;
                 FrmVentaProducto.nombre = nom;
+                FrmBoleta.nombre = nom;
                 FrmPrincipal.cargo = car;
+                FrmBoleta.cargo = car;
                 FrmRegistroHabCliente.cargo = car;
+                FrmVentaProducto.cargo = car;
                 FrmVentaProducto.cargo = car;
                 FrmPrincipal.dniemp = cod;
                 FrmPrincipal.apemp = ape;
+                FrmBoleta.dniemp = cod;
+                FrmBoleta.apemp = ape;
 
                 FrmRegistroHabCliente.apemp = ape;
                 FrmVentaProducto.apemp = ape;

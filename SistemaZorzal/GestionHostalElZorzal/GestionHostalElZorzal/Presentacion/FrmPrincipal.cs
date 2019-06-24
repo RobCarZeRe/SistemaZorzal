@@ -45,6 +45,10 @@ namespace GestionHostalElZorzal.Presentacion
             {
                 LblTipo.Text = "ADMINISTRADOR";
             }
+            if (cargo.Equals("2"))
+            {
+                LblTipo.Text = "RECEPCIONISTA";
+            }
         }
 
         private void Label1_Click(object sender, EventArgs e)

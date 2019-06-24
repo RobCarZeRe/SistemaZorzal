@@ -153,19 +153,7 @@ namespace GestionHostalElZorzal.Presentacion
 
         private void BtnBuscar_Click_1(object sender, EventArgs e)
         {
-            ClsECliente objE = new ClsECliente();
-            ClsNCliente objN = new ClsNCliente();
-            objE.cliDni = TxtDniCli.Text;
-            //DgvCliente.DataSource = objN.MtdBuscarporDni(objE);
-
-            DataTable dtEmp = new DataTable();
-            dtEmp = objN.MtdBuscarporDni(objE);
-            if (dtEmp.Rows.Count > 0)
-            {
-                DataRow Fila = dtEmp.Rows[0];
-                TxtNombre.Text = Fila["Nombre"].ToString();
-                TxtApellidos.Text = Fila["Apellido"].ToString();
-            }
+           
         }
 
         private void calcularhora()
@@ -254,6 +242,65 @@ namespace GestionHostalElZorzal.Presentacion
             MessageBox.Show("Datos Clientes Registrado Correctamente...");
             cambiarestado();
             this.Close();
+        }
+
+        private void BtnBuscar_Click_2(object sender, EventArgs e)
+        {
+            ClsECliente objE = new ClsECliente();
+            ClsNCliente objN = new ClsNCliente();
+            objE.cliDni = TxtDniCli.Text;
+            //DgvCliente.DataSource = objN.MtdBuscarporDni(objE);
+
+            DataTable dtEmp = new DataTable();
+            dtEmp = objN.MtdBuscarporDni(objE);
+            if (dtEmp.Rows.Count > 0)
+            {
+                DataRow Fila = dtEmp.Rows[0];
+                TxtNombre.Text = Fila["Nombre"].ToString();
+                TxtApellidos.Text = Fila["Apellido"].ToString();
+            }
+        }
+
+        private void TxtDias_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtDias_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+            {
+                CostoT.Text = ((Convert.ToInt32(TxtCosto.Text) * Convert.ToInt32(TxtDias.Text)).ToString());
+            }
+        }
+
+        private void TxtCargoEnc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CmbHabitacion_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            string phrase = CmbHabitacion.Text;
+            string[] words = phrase.Split('-');
+
+            string valor;
+            valor = words[1];
+            nrohab = words[0];
+            if (valor == "Matrimonial")
+            {
+                TxtCosto.Text = "200";
+
+
+            }
+            if (valor == "Doble")
+            {
+                TxtCosto.Text = "150";
+            }
+            if (valor == "Personal")
+            {
+                TxtCosto.Text = "100";
+            }
         }
     }
 }
